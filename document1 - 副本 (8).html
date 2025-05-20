@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>竹子</title>
+    <link rel="icon" href="./微信图片_20250120113516.png" type="image/x-icon"> <!-- 设置 favicon 图标 -->
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Han Sans', sans-serif; /* 思源黑体 */
+            background-color: #007bff; /* 背景变成蓝色 */
+            color: #ffffff; /* 字体颜色变成白色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* 字体居中 */
+        }
+
+        nav {
+            background-color: #fff; /* 导航栏背景颜色 */
+            color: #333;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav img {
+            width: 40px;  /* 图标宽度 */
+            height: 40px; /* 图标高度 */
+            margin-right: 15px; /* 图标与文字之间的间距 */
+        }
+
+        nav a {
+            color: #333; /* 链接颜色 */
+            text-decoration: none;
+            font-size: 1rem;
+            margin-right: 20px; /* 每个链接之间的间距 */
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            margin-top: 60px; /* 给 header 留出空间，避免被固定的 nav 遮挡 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        a {
+            color: #fff; /* 页面其他链接颜色 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <nav>
+        <img src="./微信图片_20250120113516.png" />
+        <h1>竹子</h1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./index.html">主页</a>        
+        <a href="./document（索引）.html">文档（索引）</a>
+        <a href="./fuwuzhongxin.html">服务中心</a>
+        <a href="./support.html">支持</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./登录.html">登录</a>
+    </nav>
+    <header>
+                <!-- 固定在任务栏下方的提示条 -->
+<div style="position:fixed;top:60px;left:0;width:100%;background:#1e88e5;color:white;padding:12px 0;z-index:999;box-shadow:0 2px 5px rgba(0,0,0,0.2);font-family:Arial,sans-serif">
+    <div style="width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <span>🎇 强烈庆祝对竹子本人辱骂并爱造谣的柚小文大小号都被封号，特此庆祝，庆祝时间到和好为止</span>
+      <div>
+        <button style="background:white;color:#1e88e5;border:none;border-radius:4px;padding:6px 12px;cursor:pointer;margin-right:8px" 
+                onclick="document.getElementById('alertModal').style.display='block';document.getElementById('modalOverlay').style.display='block'">
+          了解详情
+        </button>
+        <button style="background:transparent;color:white;border:1px solid white;border-radius:4px;padding:6px 12px;cursor:pointer" 
+                onclick="this.parentNode.parentNode.parentNode.style.display='none'">
+          关闭
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 内容避让占位 (任务栏高度+提示条高度) -->
+  <div style="height:110px"></div>
+  
+  <!-- 弹窗蒙层 -->
+  <div id="modalOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1001"></div>
+  
+  <!-- 详情弹窗 -->
+  <div id="alertModal" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:80%;max-width:500px;background:white;border-radius:8px;padding:20px;z-index:1002;box-shadow:0 4px 20px rgba(0,0,0,0.15)">
+    <h3 style="margin-top:0;color:#1e88e5">了解详情</h3>
+    <p style="color: rgb(0, 0, 0);">柚小文是一个非常没事找事的人，小余、小苹果、芍风和竹子都被她骂了</p>
+    <p style="color: #000000;">因为这件事情，竹子本人专门为她做了7个视频</p>
+    <button style="background:#1e88e5;color:white;border:none;border-radius:4px;padding:8px 16px;cursor:pointer;float:right" 
+            onclick="document.getElementById('alertModal').style.display='none';document.getElementById('modalOverlay').style.display='none'">
+      我知道了
+    </button>
+    <div style="clear:both"></div>
+  </div>
+        <br>
+        <br>
+        <h1>windows3.1</h1>
+        <p>2025/4/9 作者:<img src="./微信图片_20250120113516.png" style="height: 20px;"></p>
+        <br>
+    </header>
+    <div style="background: white; padding: 15px; border-radius: 10px; width: 500px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center;">
+        <img src="./icons8-错误-24.png" style="width: 28px; height: 28px; margin-right: 10px;">
+        <div>
+            <div style="font-size: 16px; font-weight: bold; color: #333;">错误</div>
+            <div style="font-size: 16px; color: #ff0000;">HTML字体出现错误，另创建一个文件也是同样效果！</div>
+            <div style="font-size: 16px; color: #ff0000;">目前正在寻找问题，在解决问题之前，您可能会遇到以下问题</div>
+            <div style="font-size: 16px; color: #ff0000;">1.字体中间有间隔</div>
+            <div style="font-size: 16px; color: #ff0000;">2.字体看着不顺眼</div>
+            <div style="font-size: 16px; color: #ff0000;">感谢您的配合与支持!</div>
+        </div>
+    </div>
+    <br>
+    <div style="background: white; padding: 15px; border-radius: 10px; width: 350px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center;">
+        <img src="./icons8-微软提示-48.png" style="width: 28px; height: 28px; margin-right: 10px;">
+        <div>
+            <div style="font-size: 16px; font-weight: bold; color: #333;">提示</div>
+            <div style="font-size: 16px; color: #ff0000;">本文应用了<a href="./document1 - 副本 (5).html" style="color: rgba(0, 166, 255, 0.833);">安装ms-dos7.10</a>文章</div>
+            <div style="font-size: 16px; color: #ff0000;">作者竹子已授权搬运</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>本文内容</p>
+    <p>什么是windows</p>
+    <p>windows3.1的更新内容</p>
+    <p>开始安装</p>
+    <br>
+    <br>
+    <h2>什么是windows</h2>
+    <p>windows是微软开发的一个图形化系统，现在的电脑大多数都是windows系统</p>
+    <br>
+    <br>
+    <h2>windows3.1的更新内容</h2>
+    <p>windows3.1有史诗级更新！</p>
+    <h3>1.添加图标</h3>
+    <p>windows3.1增加了图标以及下面的名称</p>
+    <br>
+    <h3>2.安装方式为图形化</h3>
+    <p>这是首个有图形化的windows</p>
+    <br>
+    <h3>3.添加中文</h3>
+    <p>windows3.1添加了中文，很方便</p>
+    <br>
+    <br>
+    <h2>本文章需要的文件</h2>
+    <p>vmware下载链接:<a href="https://pan.xunlei.com/s/VO1bv8TipxaLzjfDrKCK1_JtA1?pwd=graj&path=/VMware17.5">https://pan.xunlei.com/s/VO1bv8TipxaLzjfDrKCK1_JtA1?pwd=graj&path=/VMware17.5</a></p>
+    <p>ms-dos img下载连接:<a href="https://pan.baidu.com/s/148tL7LvkRNtpzXCNF1nbTA?pwd=2011#list/path=%2FMS-DOS&parentPath=%2F">https://pan.baidu.com/s/148tL7LvkRNtpzXCNF1nbTA?pwd=2011#list/path=%2FMS-DOS&parentPath=%2F</a></p>
+    <p>windows下载连接:<a href="https://pan.baidu.com/s/10FuipYWjEapC6wbt0n3TKQ#list/path=%2Fwindows3.1">https://pan.baidu.com/s/10FuipYWjEapC6wbt0n3TKQ#list/path=%2Fwindows3.1</a></p>
+    <p>视频链接:<a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4">https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4</a></p>
+    <br>
+    <br>
+    <h2>开始安装</h2>
+    <br>
+    <p>打开vmware，选择创建新的虚拟机</p>
+    <img src="./2101.png" style="height: 100px;">
+    <br>
+    <p>选择典型（推荐）然后下一步</p>
+    <img src="./2102.png" style="height: 400px;">
+    <br>
+    <p>浏览我们的ISO文件</p>
+    <br>
+    <p>选择其他，选择windows3.1，名称和位置自定，下一步，默认下一步，完成</p>
+    <br>
+    <p>开机，出现vmwarelogo的时候，狂按F2，然后移动到boot，然后找到CD-ROM，我们按加号变成第1个，然后按F10，按回车</p>
+    <br>
+    <p>以下内容将引用<a href="./document1 - 副本 (5).html">安装ms-dos7.10</a>文档</p>
+    <br>
+    <p>一直回车直到重启，开机，按7下回车，yes，回车，next，回车3下，取消勾选install addons，next，回车4下</p>
+    <br>
+    <p>等他加载，回车，选择yes，回车5下，回车8下，回车11下，选择yes，回车，重启</p>
+    <br>
+    <p>重启完进入选择页面，不要动，关机，选择编辑虚拟机设置，选择CD/DVD，取消勾选启动时连接，确定，开机</p>
+    <br>
+    <p>然后他会进入开机页面，安装完成</p>
+    <br>
+    <p>结束引用</p>
+    <br>
+    <p>进入ms-dos，我们点击右下角第3个图标，选择设置，然后我们改成windows3.1的ISO</p>
+    <br>
+    <p>选择确定，输入a: 回车，输入setup，按3下回车，这里可以看到进入图形化界面了</p>
+    <br>
+    <p>首先在这个框框里输入你的名字，如果需要中文，那么就按ctrl+空格</p>
+    <br>
+    <p>回车3下，这里他让我们查看教程，这里我们可以看一下早期windows的教程，我们点击跳过教程</p>
+    <br>
+    <p>按回车，然后他会进入ms-dos，我们输入win就可以进入了，安装完成</p>
+    <br>
+    <br>
+    <p>zhuzistudio version3.0</p>
+    <p>copylight © zhuzistudio</p>
+    <br>
+    </body>
+    </html>

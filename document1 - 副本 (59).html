@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>竹子</title>
+    <link rel="icon" href="./微信图片_20250120113516.png" type="image/x-icon"> <!-- 设置 favicon 图标 -->
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Han Sans', sans-serif; /* 思源黑体 */
+            background-color: #007bff; /* 背景变成蓝色 */
+            color: #ffffff; /* 字体颜色变成白色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* 字体居中 */
+        }
+
+        nav {
+            background-color: #fff; /* 导航栏背景颜色 */
+            color: #333;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav img {
+            width: 40px;  /* 图标宽度 */
+            height: 40px; /* 图标高度 */
+            margin-right: 15px; /* 图标与文字之间的间距 */
+        }
+
+        nav a {
+            color: #333; /* 链接颜色 */
+            text-decoration: none;
+            font-size: 1rem;
+            margin-right: 20px; /* 每个链接之间的间距 */
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            margin-top: 60px; /* 给 header 留出空间，避免被固定的 nav 遮挡 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        a {
+            color: #fff; /* 页面其他链接颜色 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <nav>
+        <img src="./微信图片_20250120113516.png" />
+        <h1>竹子</h1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./index.html">主页</a>        
+        <a href="./document（索引）.html">文档（索引）</a>
+        <a href="./fuwuzhongxin.html">服务中心</a>
+        <a href="./support.html">支持</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./登录.html">登录</a>
+    </nav>
+    <header>
+                <!-- 固定在任务栏下方的提示条 -->
+<div style="position:fixed;top:60px;left:0;width:100%;background:#1e88e5;color:white;padding:12px 0;z-index:999;box-shadow:0 2px 5px rgba(0,0,0,0.2);font-family:Arial,sans-serif">
+    <div style="width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <span>🎇 强烈庆祝对竹子本人辱骂并爱造谣的柚小文大小号都被封号，特此庆祝，庆祝时间到和好为止</span>
+      <div>
+        <button style="background:white;color:#1e88e5;border:none;border-radius:4px;padding:6px 12px;cursor:pointer;margin-right:8px" 
+                onclick="document.getElementById('alertModal').style.display='block';document.getElementById('modalOverlay').style.display='block'">
+          了解详情
+        </button>
+        <button style="background:transparent;color:white;border:1px solid white;border-radius:4px;padding:6px 12px;cursor:pointer" 
+                onclick="this.parentNode.parentNode.parentNode.style.display='none'">
+          关闭
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 内容避让占位 (任务栏高度+提示条高度) -->
+  <div style="height:110px"></div>
+  
+  <!-- 弹窗蒙层 -->
+  <div id="modalOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1001"></div>
+  
+  <!-- 详情弹窗 -->
+  <div id="alertModal" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:80%;max-width:500px;background:white;border-radius:8px;padding:20px;z-index:1002;box-shadow:0 4px 20px rgba(0,0,0,0.15)">
+    <h3 style="margin-top:0;color:#1e88e5">了解详情</h3>
+    <p style="color: rgb(0, 0, 0);">柚小文是一个非常没事找事的人，小余、小苹果、芍风和竹子都被她骂了</p>
+    <p style="color: #000000;">因为这件事情，竹子本人专门为她做了7个视频</p>
+    <button style="background:#1e88e5;color:white;border:none;border-radius:4px;padding:8px 16px;cursor:pointer;float:right" 
+            onclick="document.getElementById('alertModal').style.display='none';document.getElementById('modalOverlay').style.display='none'">
+      我知道了
+    </button>
+    <div style="clear:both"></div>
+  </div>
+        <br>
+        <br>
+        <h1>minecraft（基岩版）</h1>
+        <p>2025/5/7 作者:<img src="./微信图片_20250120113516.png" style="height: 20px;"></p>
+        <br>
+    </header>
+    <div style="background: white; padding: 15px; border-radius: 10px; width: 500px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center;">
+        <img src="./icons8-错误-24.png" style="width: 28px; height: 28px; margin-right: 10px;">
+        <div>
+            <div style="font-size: 16px; font-weight: bold; color: #333;">错误</div>
+            <div style="font-size: 16px; color: #ff0000;">HTML字体出现错误，另创建一个文件也是同样效果！</div>
+            <div style="font-size: 16px; color: #ff0000;">目前正在寻找问题，在解决问题之前，您可能会遇到以下问题</div>
+            <div style="font-size: 16px; color: #ff0000;">1.字体中间有间隔</div>
+            <div style="font-size: 16px; color: #ff0000;">2.字体看着不顺眼</div>
+            <div style="font-size: 16px; color: #ff0000;">感谢您的配合与支持!</div>
+        </div>
+    </div>
+    <br>
+    <div style="background: white; padding: 15px; border-radius: 10px; width: 400px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center;">
+        <img src="./icons8-手机-50.png" style="width: 28px; height: 28px; margin-right: 10px;">
+        <div>
+            <div style="font-size: 16px; font-weight: bold; color: #333;">请在手机上使用本文，本文不提供/支持电脑版</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3>本文内容</h3>
+    <p>什么是minecraft</p>
+    <p>开始安装</p>
+    <br>
+    <br>
+    <h2>什么是minecraft</h2>
+    <p>《我的世界》（英语：Minecraft，香港和台湾常用英文）是微软旗下Mojang Studios开发的沙盒游戏。游戏中，玩家能在一个3D世界内与方块或生物进行交互。游戏中的特色功能包括探索世界、采集资源、合成物品及生存冒险等。《我的世界》有多种模式。其中，两个最主要的游戏模式：生存与创造。生存模式中，玩家必须维持生命，努力避免受伤、饥饿和死亡，并开采资源以打造自己的世界；创造模式中，玩家拥有无限的资源，可以自由地创作，且不会受伤和死亡，也可以免于饥饿，并有飞行能力。</p>
+    <br>
+    <br>
+    <h2>本文章需要的文件</h2>
+    <p>注册QQ<a href="https://ssl.zc.qq.com/v3/index-chs.html?type=0">https://ssl.zc.qq.com/v3/index-chs.html?type=0</a></p>
+    <p>苹果软件站<a href="https://www.iios.club/#/login">https://www.iios.club/#/login</a></p>
+    <p>视频链接<a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4">https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4</a></p>
+    <br>
+    <br>
+    <h2>开始安装</h2>
+    <br>
+    <p>打开注册QQ的网页，第一个输入你的名称，第2个输入你的密码，第3个输入手机号，这里我们点击接受条款协议，选择第4个的发送验证码</p>
+    <br>
+    <p>这里按照他的提示完成人机验证，选择确定，这里打开信息，按照他的提示给1069XXXX发送注册QQ，然后选择我已发送，然后选择立即登录</p>
+    <br>
+    <p>这样就注册完成了，然后我们打开苹果软件站，选择还没账号去注册，第1栏输入咱们刚才注册的QQ邮箱，第2个输入密码，第3个打开微信</p>
+    <br>
+    <p>搜索苹果软件站，关注他，输入访问码，这里可以看到他给了一个6位数，然后把这个数字复制到苹果软件站里面，选择提交注册，这样就注册完成了</p>
+    <br>
+    <p>这里他会弹出登录页面，输入邮箱密码，选择提交登录，这样就进来了，找到minecraft，选择我已确认，这里点击立即兑换，选择确定兑换</p>
+    <br>
+    <p>然后他可能会让你做题也可能直接给你账号密码，我们复制这个账号密码，打开appstore，注意是appstore，搞错了别管我，这里选择搜索，选择右上角头像</p>
+    <br>
+    <p>滑到最后，选择退出登录，然后选择登录apple账号，粘贴邮箱，选择继续，选择其他选项，选择不升级，然后粘贴密码，选择继续，这里在用户这里找到app</p>
+    <br>
+    <p>然后选择第2个，这里搜索minecraft，选择下载，这里等他下载完成，下载完成就点击退出登录，这样就下载好了</p>
+    <br>
+    <br>
+    <p>zhuzistudio version3.0</p>
+    <p>copylight © zhuzistudio</p>
+    <br>
+    </body>
+    </html>

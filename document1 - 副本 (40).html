@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>竹子</title>
+    <link rel="icon" href="./微信图片_20250120113516.png" type="image/x-icon"> <!-- 设置 favicon 图标 -->
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Han Sans', sans-serif; /* 思源黑体 */
+            background-color: #007bff; /* 背景变成蓝色 */
+            color: #ffffff; /* 字体颜色变成白色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* 字体居中 */
+        }
+
+        nav {
+            background-color: #fff; /* 导航栏背景颜色 */
+            color: #333;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav img {
+            width: 40px;  /* 图标宽度 */
+            height: 40px; /* 图标高度 */
+            margin-right: 15px; /* 图标与文字之间的间距 */
+        }
+
+        nav a {
+            color: #333; /* 链接颜色 */
+            text-decoration: none;
+            font-size: 1rem;
+            margin-right: 20px; /* 每个链接之间的间距 */
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            margin-top: 60px; /* 给 header 留出空间，避免被固定的 nav 遮挡 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        a {
+            color: #fff; /* 页面其他链接颜色 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <nav>
+        <img src="./微信图片_20250120113516.png" />
+        <h1>竹子</h1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./index.html">主页</a>        
+        <a href="./document（索引）.html">文档（索引）</a>
+        <a href="./fuwuzhongxin.html">服务中心</a>
+        <a href="./support.html">支持</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./登录.html">登录</a>
+    </nav>
+    <header>
+                <!-- 固定在任务栏下方的提示条 -->
+<div style="position:fixed;top:60px;left:0;width:100%;background:#1e88e5;color:white;padding:12px 0;z-index:999;box-shadow:0 2px 5px rgba(0,0,0,0.2);font-family:Arial,sans-serif">
+    <div style="width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <span>🎇 强烈庆祝对竹子本人辱骂并爱造谣的柚小文大小号都被封号，特此庆祝，庆祝时间到和好为止</span>
+      <div>
+        <button style="background:white;color:#1e88e5;border:none;border-radius:4px;padding:6px 12px;cursor:pointer;margin-right:8px" 
+                onclick="document.getElementById('alertModal').style.display='block';document.getElementById('modalOverlay').style.display='block'">
+          了解详情
+        </button>
+        <button style="background:transparent;color:white;border:1px solid white;border-radius:4px;padding:6px 12px;cursor:pointer" 
+                onclick="this.parentNode.parentNode.parentNode.style.display='none'">
+          关闭
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 内容避让占位 (任务栏高度+提示条高度) -->
+  <div style="height:110px"></div>
+  
+  <!-- 弹窗蒙层 -->
+  <div id="modalOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1001"></div>
+  
+  <!-- 详情弹窗 -->
+  <div id="alertModal" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:80%;max-width:500px;background:white;border-radius:8px;padding:20px;z-index:1002;box-shadow:0 4px 20px rgba(0,0,0,0.15)">
+    <h3 style="margin-top:0;color:#1e88e5">了解详情</h3>
+    <p style="color: rgb(0, 0, 0);">柚小文是一个非常没事找事的人，小余、小苹果、芍风和竹子都被她骂了</p>
+    <p style="color: #000000;">因为这件事情，竹子本人专门为她做了7个视频</p>
+    <button style="background:#1e88e5;color:white;border:none;border-radius:4px;padding:8px 16px;cursor:pointer;float:right" 
+            onclick="document.getElementById('alertModal').style.display='none';document.getElementById('modalOverlay').style.display='none'">
+      我知道了
+    </button>
+    <div style="clear:both"></div>
+  </div>
+        <br>
+        <br>
+        <h1>开放麒麟</h1>
+        <p>2025/5/7 作者:<img src="./微信图片_20250120113516.png" style="height: 20px;"></p>
+        <br>
+    </header>
+    <div style="background: white; padding: 15px; border-radius: 10px; width: 500px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center;">
+        <img src="./icons8-错误-24.png" style="width: 28px; height: 28px; margin-right: 10px;">
+        <div>
+            <div style="font-size: 16px; font-weight: bold; color: #333;">错误</div>
+            <div style="font-size: 16px; color: #ff0000;">HTML字体出现错误，另创建一个文件也是同样效果！</div>
+            <div style="font-size: 16px; color: #ff0000;">目前正在寻找问题，在解决问题之前，您可能会遇到以下问题</div>
+            <div style="font-size: 16px; color: #ff0000;">1.字体中间有间隔</div>
+            <div style="font-size: 16px; color: #ff0000;">2.字体看着不顺眼</div>
+            <div style="font-size: 16px; color: #ff0000;">感谢您的配合与支持!</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3>本文内容</h3>
+    <p>什么是开放麒麟</p>
+    <p>开始安装</p>
+    <br>
+    <br>
+    <h2>什么是开放麒麟</h2>
+    <p>开放麒麟（英语：openKylin），是由麒麟软件有限公司等软硬件企业、组织、科研院所等组成的一个开源发行版社区。其首个版本于2022年6月发布，采用5.15版本Linux内核</p>
+    <br>
+    <br>
+    <h2>本文章需要的文件</h2>
+    <p>vmware下载链接<a href="https://pan.xunlei.com/s/VO1bv8TipxaLzjfDrKCK1_JtA1?pwd=graj&path=%2FVMware17.5">https://pan.xunlei.com/s/VO1bv8TipxaLzjfDrKCK1_JtA1?pwd=graj&path=%2FVMware17.5</a></p>
+    <p>开放麒麟<a href="https://www.openkylin.top/downloads/download-smp.php?id=80">https://www.openkylin.top/downloads/download-smp.php?id=80</a></p>
+    <p>视频链接<a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4">https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4</a></p>
+    <br>
+    <br>
+    <h2>开始安装</h2>
+    <br>
+    <p>打开vmware，选择创建新的虚拟机，选择自定义高级，下一步2下，选择浏览，找到下载的镜像，选择打开，下一步，选择Linux，选择Ubuntu</p>
+    <br>
+    <p>下一步，名称和位置自定，下一步2下，选择自定义硬件，处理器改成8核，开机，按I等他加载，下一步，选择接受协议再点下一步，下一步2下</p>
+    <br>
+    <p>选择上面的盘，下一步，选择格式化整个磁盘，下一步2下，随便写，下一步，随便选，开始安装，等他安装就行了</p>
+    <br>
+    <br>
+    <p>选择立即重启，等他加载，输入密码，下一步，安装完成</p>
+    <br>
+    <br>
+    <p>zhuzistudio version3.0</p>
+    <p>copylight © zhuzistudio</p>
+    <br>
+    </body>
+    </html>
